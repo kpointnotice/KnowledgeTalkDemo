@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" value="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+KR|Righteous|Noto+Serif+KR|Oswald|Fugaz+One|Kanit"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="/css/default.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/lib/socket.io.js"></script>
+    <script src="/js/lib/adapter.js"></script>
+    <script src="/js/lib/common.js"></script>
+    <script src="/js/lib/kurento-utils.js"></script>
+    <script src="/js/lib/pdf.js"></script>
+    <script src="/js/lib/pdf.worker.js"></script>
+    <script src="/js/lib/MediaStreamRecorder.js"></script>
+    <script src="/js/lib/notify.min.js"></script>
+    <script src="/js/lib/graph.js"></script>
+    <script src="/js/lib/notify.style.js"></script>
+    <script type="text/javascript">
+      var refreshCaptcha;
+      var onloadCallback = function() {
+        refreshCaptcha = grecaptcha.render("signupCapt", {
+          sitekey: "6LfzW44UAAAAAHIZ10OahJRWabhGRRTOm11XNqe4"
+        });
+      };
+      function signupAccept() {
+        document.getElementById("SignupProcBtn").classList += " blue";
+        document.getElementById("SignupProcBtn").disabled = "";
+      }
+    </script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async
+      defer
+    ></script>
+    <title>KnowledgeTalk</title>
+  </head>
+  <body class="notranslate">
+    <div class="wrapper">
+      <!-- Message 팝업-->
+      <% include ./inc/messageBox.ejs %>
+      <!-- Message 팝업-->
+      <!-- 팝업영역-->
+      <% include ./inc/popup/popup.ejs %>
+      <!-- 팝업영역-->
+      <!-- header -->
+      <% include ./inc/header.ejs %>
+      <!-- leftsidebar -->
+      <% include ./inc/leftSidebar.ejs %>
+      <!--tooltip-->
+      <% include ./inc/tooltip.ejs %>
+      <!-- rightsidebar -->
+      <% include ./inc/rightSidebar.ejs %>
+      <!-- document -->
+      <% include ./inc/document.ejs %>
+      <!-- video -->
+      <% include ./inc/video.ejs %>
+    </div>
+    <% include ./inc/notice.ejs %>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/service/chromeMessageHandler.js"></script>
+  <script src="/js/controller/common.controller.js"></script>
+  <script src="/js/controller/header.controller.js"></script>
+  <script src="/js/controller/login.controller.js"></script>
+  <script src="/js/controller/sidebar.controller.js"></script>
+  <script src="/js/controller/signup.controller.js"></script>
+  <script src="/js/controller/document.controller.js"></script>
+  <script src="/js/controller/invite.controller.js"></script>
+  <script src="/js/controller/chat.controller.js"></script>
+  <script src="/js/controller/meetingList.controller.js"></script>
+  <script src="/js/controller/friendList.controller.js"></script>
+  <script src="/js/controller/inviteList.controller.js"></script>
+  <script src="/js/controller/infoEdit.controller.js"></script>
+  <script src="/js/controller/whiteboard.controller.js"></script>
+  <script src="/js/controller/setup.controller.js"></script>
+  <script src="/js/controller/join.controller.js"></script>
+  <script src="/js/controller/record.controller.js"></script>
+  <script src="/js/service/socket.service.js"></script>
+  <script src="/js/service/common.service.js"></script>
+  <script src="/js/service/login.service.js"></script>
+  <script src="/js/service/document.service.js"></script>
+  <script src="/js/service/invite.service.js"></script>
+  <script src="/js/service/video.service.js"></script>
+  <script src="/js/service/meetingList.service.js"></script>
+  <script src="/js/service/inviteList.service.js"></script>
+  <script src="/js/service/chat.service.js"></script>
+  <script src="/js/service/friendList.service.js"></script>
+  <script src="/js/service/infoEdit.service.js"></script>
+  <script src="/js/service/oneAndoneScreenShare.service.js"></script>
+  <script src="/js/service/setup.service.js"></script>
+  <script src="/js/service/presence.service.js"></script>
+  <script src="/js/service/connectSingle.service.js"></script>
+  <script src="/js/service/singleConference.service.js"></script>
+  <script src="/js/service/connectMulti.service.js"></script>
+  <script src="/js/service/connectKurento.service.js"></script>
+  <script src="/js/controller/whiteboard.controller.js"></script>
+  <script src="/js/service/multiScreenShare.service.js"></script>
+  <script src="/js/service/signup.service.js"></script>
+  <script src="/js/service/screenshareCanvas.service.js"></script>
+  <script src="/js/service/exception.service.js"></script>
+  <script src="/js/service/document.pdf.service.js"></script>
+  <script src="/js/service/join.service.js"></script>
+  <script src="/js/service/record.service.js"></script>
+  <script src="/js/constant/string.js"></script>
+  <!--janus-->
+  <script src="/js/service/connectJanus.service.js"></script>
+</html>

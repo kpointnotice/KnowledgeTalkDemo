@@ -1,0 +1,28 @@
+<div class="friend" id="FriendList">
+    <div class="popup-title">Friend List</div>
+    <ul class="popup-content friend">
+        <li class="search-tab" id="SearchTab"><a data-value="inFriend">친구목록</a> <a class="active" data-value="all">전체검색</a></li>
+        <li><input id="FriendSearchInput" type="text"> <a  class="search-btn"><i class="material-icons">search</i></a></li>
+        <li class="friend-list-title"><i class="material-icons">people</i> <label>FriendList</label> </li>
+        <li class="friend-box">
+            <div class="friend-box-scroll">
+                <ol id="FriendListBox">
+                    <li>
+                        <dl class="friend-list">
+                            <dt><i class="material-icons">search</i></dt>
+                            <dd>ID로 검색하실 수 있습니다.</dd>
+                        </dl>
+                    </li>
+                </ol>
+            </div>
+        </li>
+    </ul>
+    <div class="popup-btn" id="FriendListBtnGrp">
+        <button class="waves-effect waves-light btn green">추가</button>
+        <!-- <button class="waves-effect waves-light btn brown">취소</button>
+        <button class="waves-effect waves-light btn blue">승인</button>
+        <button class="waves-effect waves-light btn purple">거절</button> -->
+        <button class="waves-effect waves-light btn red" style="display: none">삭제</button>
+        <button class="waves-effect waves-light btn grey close" id="FriendListClose">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="signup" id="Signup">
+    <div class="popup-title">Member Signup</div>
+    <ul class="popup-content">
+        <li><i class="material-icons">person</i> <label>User ID</label> </li>
+        <li class="popup-input"><input type="text" id="SignupUserId"></li>
+        <li><i class="material-icons">person_outline</i> <label>User Name</label> </li>
+        <li class="popup-input"><input type="text" id="SignupUserName"></li>
+        <li><i class="material-icons">lock</i> <label>User PW</label></li>
+        <li class="popup-input"><input type="password" id="SignupUserPw"></li>
+        <li><i class="material-icons">lock_open</i> <label>User Re PW</label></li>
+        <li class="popup-input"><input type="password" id="SignupUserRePw"></li>
+        <!-- <li><i class="material-icons">notification_important</i> <label>Auto Captcha Entry</label></li> -->
+        <!-- <li class="popup-input">
+            <div class="box"><img id="SignupCaptcha" /></div>
+            <div class="input">
+                <a href="" id="SignupCaptchaRenew"><i class="material-icons">autorenew</i>Refresh</a>
+                <input id="SignupCaptchaInput" type="text">
+            </div>
+        </li> -->
+        <li><div id="signupCapt" data-callback="signupAccept"></div></li>
+    </ul>
+    <div class="popup-btn">
+        <button class="waves-effect waves-light btn" id="SignupProcBtn" disabled>Signup</button>
+        <button class="waves-effect waves-light btn grey close" id="SignupClose">Cancel</button>
+    </div>
+</div>

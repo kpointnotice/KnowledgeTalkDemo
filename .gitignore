@@ -1,0 +1,30 @@
+upload/
+record/
+chat/
+node_modules/
+package-lock.json
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.log
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+npm-debug.log
+.idea
+.grunt
+.DS_Store
+test/coverage/
+
+
+.bak

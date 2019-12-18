@@ -1,0 +1,25 @@
+{
+  "name": "knowledgetalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mkdirp": "^0.5.1",
+    "multer": "^1.4.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "trim": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
